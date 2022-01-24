@@ -6,10 +6,10 @@ class Queue:
         return self.items == []
 
     def insert(self, item): #enqueue
-        self.items.insert(0,item)
+        self.items.insert(0, item)
 
     def remove(self): #dequeue
-        return self.items.pop()
+        return self.items.pop() #default last
 
     def size(self):
         return len(self.items)
