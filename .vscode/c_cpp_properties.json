@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/Program Files/GNU/mingw64/include/python3.9"
             ],
             "defines": [
                 "_DEBUG",
@@ -13,7 +14,7 @@
             "windowsSdkVersion": "10.0.19041.0",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64",
+            "intelliSenseMode": "${default}",
             "compilerPath": "C:/Program Files/GNU/mingw64/bin/g++.exe"
         }
     ],

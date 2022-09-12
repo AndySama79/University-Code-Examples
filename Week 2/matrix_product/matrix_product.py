@@ -14,17 +14,17 @@ def matrix_product(M, N):
     
     return A
 
-A = np.random.rand(100, 100)
-B = np.random.rand(100, 100)
+# A = np.random.rand(100, 100)
+# B = np.random.rand(100, 100)
 
-st = time.time()
-matrix_product(A, B)
-time.sleep(1)
-et = time.time()
-print("My algo: ", et-st-1)
+# st = time.time()
+# matrix_product(A, B)
+# time.sleep(1)
+# et = time.time()
+# print("My algo: ", et-st-1)
 
-st = time.time()
-np.matmul(A, B)
-time.sleep(1)
-et = time.time()
-print("Numpy: ", et-st-1)
+# st = time.time()
+# np.matmul(A, B)
+# time.sleep(1)
+# et = time.time()
+# print("Numpy: ", et-st-1)

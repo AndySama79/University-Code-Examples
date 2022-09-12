@@ -4,27 +4,28 @@ import matplotlib.pyplot as plt
 import time
 
 # my function for matrix mulitplication
-def my_mul(M, N):
-    rows = M.shape[0]
-    cols = N.shape[1]
-    A = np.zeros((rows, cols))
+def matrix_product(M, N):
+    rows = N.shape[0]
+    cols = M.shape[1]
+    A = np.zeros((M.shape[0], N.shape[1]))
 
     if rows != cols:
-        print("Not Compatible")
-        return
-    else: 
-        for i in range(0, rows):
-            for j in range(0, cols):
-                A[i][j] = sum(M[i, :] * N[:, j])
+        return -1
+    else:
+        for i in range(0, M.shape[0]):
+            for j in range(0, N.shape[1]):
+                A[i][j] = (sum(M[i, :] * N[:, j]))
     
     return A
 
 # main 
-np_time = []
-my_time = []
+np_avg = []
+my_avg = []
 
-for i in range(10, 101, 10):
+while i < 129:
     M = np.random.rand(i, i)
+    np_time = []
+    my_time = []
 
     st = time.time()
     A = np.matmul(M, M)
@@ -33,10 +34,12 @@ for i in range(10, 101, 10):
     np_time.append(et-st-2)
 
     st = time.time()
-    A = my_mul(M, M)
+    A = matrix_product(M, M)
     time.sleep(2)
     et = time.time()
     my_time.append(et-st-2)
+
+    i = i * 2
 
 # plotting differences
 X = np.arange(10)
@@ -49,6 +52,6 @@ ax.plot(X, my_time, color='#1A4D2E')
 
 plt.xlabel("Dimensions")
 plt.ylabel("Time")
-plt.title("Numpy vectorization v/s My Algorithm")
+plt.title("Numpy vectorization v/s Naive Algorithm")
 
 plt.show()
