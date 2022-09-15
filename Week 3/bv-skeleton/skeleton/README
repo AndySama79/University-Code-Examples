@@ -1,0 +1,21 @@
+ Assignment:
+ Srinivasan Viswanathan
+ srinivasan.viswanathan@plaksha.edu.in
+
+Objective:
+
+Implement the is_free, is_set, set_bit, clear_bit functions.
+
+complete the code for __str__ function. That will help you debug. print(a) where 
+the object a is of type mybit_vector, will print according to the comments above 
+this function.
+
+
+You can use the test.py to test the code. However, pls note that the verification 
+process uses your own code and thus if your code is wrong, it will be wrong for 
+ever. However it shows the logic of how you should verify things. 
+The backend testing in codepost may use a different methodology of testing.
+
+
+The code is well commented for you to understand. 
+Write more test cases than given in the test.py if required.
