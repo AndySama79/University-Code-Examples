@@ -3,7 +3,7 @@ from os import sys
 
 
 def bit_vector_tests():
-    bv=mybit_vector(48)
+    bv=mybit_vector(64)
 
 # verify that all bits are zero
 
@@ -12,26 +12,26 @@ def bit_vector_tests():
     bv.set_bit(3)
     print(bv)
 
-    bv.set_bit(47)
+    bv.set_bit(63)
     print(bv)
 
     try:
-        bv.set_bit(48)
+        bv.set_bit(64)
         print(bv)
 
     except mybit_overflow:
         print("overflow test passed")
 
-    if bv.is_set(47):
-        print("47 set bit passed")
+    if bv.is_set(63):
+        print("63 set bit passed")
     else:
-        print("47 set bit FAILED")
+        print("63 set bit FAILED")
         sys.exit(1)
 
-    if bv.is_free(47) == 0:
-        print("47 ! clear bit passed")
+    if bv.is_free(63) == 0:
+        print("63 ! clear bit passed")
     else:
-        print("47 ! clear bit FAILED")
+        print("63 ! clear bit FAILED")
         sys.exit(1)
 
     if bv.is_set(3):
@@ -46,7 +46,7 @@ def bit_vector_tests():
         sys.exit(1)
 
     print(bv)
-    bv.clear_bit(47)
+    bv.clear_bit(63)
     bv.clear_bit(3)
     print(bv)
     print("PLEASE VERIFY THAT all bits are zero in the above VECTOR ")

@@ -51,6 +51,12 @@ class mybit_vector:
         if bit >= self.bit_total_bits:
             raise mybit_overflow(bit,self)
         # YOUR CODE 
+        byte_pos = bit // 8
+        bit_pos = bit % 8
+        mask = 1 << bit_pos
+        if self.bit_vector[byte_pos] & mask == 0:
+            return 1
+        return 0
         raise NotImplementedError 
 # Returns 1 if the bit is set
 # Returns 0 if the bit is not set
@@ -59,6 +65,12 @@ class mybit_vector:
         if bit >= self.bit_total_bits:
             raise mybit_overflow(bit,self)
         # YOUR CODE 
+        byte_pos = bit // 8
+        bit_pos = bit % 8
+        mask = 1 << bit_pos
+        if self.bit_vector[byte_pos] & mask != 0:
+            return 1
+        return 0
         raise NotImplementedError 
 
 #sets the bit passed in "bit" (used by mem_alloc in the mymemory class)
@@ -68,7 +80,12 @@ class mybit_vector:
     def set_bit(self, bit):
         if bit >= self.bit_total_bits:
             raise mybit_overflow(bit,self)
-        # YOUR CODE 
+        # YOUR CODE
+        byte_pos = bit // 8
+        bit_pos = bit % 8
+        mask = 1 << bit_pos
+        self.bit_vector[byte_pos] = self.bit_vector[byte_pos] | mask
+        return self.bit_vector
         raise NotImplementedError 
 
 #clears the bit passed in "bit" (used by mem_free in the mymemory class)
@@ -79,6 +96,11 @@ class mybit_vector:
         if bit >= self.bit_total_bits:
             raise mybit_overflow(bit,self)
         # YOUR CODE 
+        byte_pos = bit // 8
+        bit_pos = bit % 8
+        mask = ~(1 << bit_pos)
+        self.bit_vector[byte_pos] = self.bit_vector[byte_pos] & mask
+        return self.bit_vector
         raise NotImplementedError 
 
 # prints the bit state. Dont print if the size is large. it will loop
@@ -119,6 +141,8 @@ class mybit_vector:
             # in increasing order.
 
             #YOUR CODE for the above logic
+            for j in range(8*i, 8*(i+1)):
+                s = s + str(self.is_set(j))
 
             s=s+"  "
         return s
