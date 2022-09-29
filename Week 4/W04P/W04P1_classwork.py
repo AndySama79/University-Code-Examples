@@ -121,7 +121,7 @@ longs = [
 ]
 
 city_loc_type = np.dtype([("name", "U16"), ("lat", "f4"), ("long", "f4")])
-city_loc = np.array([(names[i], lats[i], longs[i]) for i in range(0, len(names))], dtype=city_loc_type)
+city_loc = np.array(list(zip(names, lats, longs)), dtype=city_loc_type)
 
 # %% 11: Query the structured array
 
@@ -133,4 +133,3 @@ my_southern = ['Jakarta', 'Sao Paulo', 'Buenos Aires']
 #   11.2: Cities in southern and western hemisphere
 
 southwest = city_loc[(city_loc['lat'] < 0) & (city_loc['long'] < 0)]
-# %%
