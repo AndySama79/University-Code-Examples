@@ -1,0 +1,4 @@
+2 Nov, 2022
+    -dimensionality wrt data
+    -polyfit methods
+    -noise in data
