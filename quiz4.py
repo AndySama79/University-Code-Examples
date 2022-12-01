@@ -357,6 +357,7 @@ double quotes for python.
 You need to perform that operation in the order (dont worry about operator priority) sent.
 
 eg., if the arguments are : 2 + 3 * 5 - 3 * 4 + -6 / 11
+"2" "+" "3" "*" "5" "-" "3" "*" "4" "+" "-6" "/" "11"
 
 the program will print  7. 
 

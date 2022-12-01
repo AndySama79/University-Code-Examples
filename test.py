@@ -1,4 +1,5 @@
 from quiz4 import *
+import sys
 
-print(2 ** 14)
-print(do_bit_ops(255, 15, 5, 'mul'))
+arg = sys.argv
+print(arg)
