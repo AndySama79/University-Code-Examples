@@ -1,2 +1,2 @@
 # University-Code-Examples
-Code Examples Prof. Sukrit Gupta
+Code Examples from University Classes
