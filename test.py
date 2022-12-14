@@ -1,5 +1,6 @@
 from quiz4 import *
 import sys
 
-arg = sys.argv
-print(arg)
+print(find_native(500))
+
+print()
