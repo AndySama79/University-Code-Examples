@@ -24,9 +24,10 @@ def myprint(msg):
 def run_perceptron(x1, y1, niter, th, t0, start_index, offset):
     #   initialization
     total_mistakes = 0
-    convergence = True  #   assumption
+    convergence = 0  #   assumption
+    thetas = []
     #   logic for perceptron: updating th, t0, total_mistakes
-    while niter > 0:
+    while convergence != 1:
   
         for i in range(start_index, len(y1)):
             if y1[i] * (np.sum(np.dot(th, x1[i])) + t0) <= 0:
@@ -34,6 +35,7 @@ def run_perceptron(x1, y1, niter, th, t0, start_index, offset):
                 total_mistakes += 1
                 if offset != False or offset != 0:
                     t0 += y1[i]
+            thetas.append(list(th))
 
         for i in range(0, start_index):
             if y1[i] * (np.sum(np.dot(th, x1[i])) + t0) <= 0:
@@ -41,15 +43,22 @@ def run_perceptron(x1, y1, niter, th, t0, start_index, offset):
                 total_mistakes += 1
                 if offset != False or offset != 0:
                     t0 += y1[i]
+            thetas.append(list(th))
+        
+        for i in range(len(y1)):
+            if y1[i] * (np.sum(np.dot(th, x1[i])) + t0) <= 0:
+                convergence = 0
+                break
+            convergence = 1
 
-        niter = niter - 1
+        # niter = niter - 1
 
-    for i in range(len(y1)):
-        if y1[i] * (np.sum(np.dot(th, x1[i])) + t0) <= 0:
-            convergence = 0
-            break
+    # for i in range(len(y1)):
+    #     if y1[i] * (np.sum(np.dot(th, x1[i])) + t0) <= 0:
+    #         convergence = 0
+    #         break
 
-    return convergence, total_mistakes, th, t0
+    return convergence, total_mistakes, th, t0, thetas
 
 def main():
     # generate your own points in two dimensions
@@ -72,16 +81,21 @@ def main():
 
     X, y = datasets.make_classification(n_samples=testpoints, n_features=2, n_informative=1, n_redundant=0, n_classes=2, n_clusters_per_class=1, class_sep=5.0, hypercube=False)
     y = np.where(y == 0, -1, 1)
+
+    X = np.array([[-2, -2], [2, 0], [-2, 2.5]])
+    y = np.array([1, -1, 1])
+
     print(f'Points:{X}')
     print(f'Classification:{y}')
     order = X.shape[1]
     print(f'n:{len(X)}, order:{order}')
 
-    th = np.array([1, 1])
+    th = np.array([0, 0])
     t0 = 0
 
     print(f'Parameters:{th}')
     print(f'Offset:{t0}') 
+    # print(thetas)
 
     plt.scatter(X[:, 0][ y == -1 ], X[:, 1][ y == -1 ], color='red')
     plt.scatter(X[:, 0][ y == 1 ], X[:, 1][ y == 1 ], color='cyan')
@@ -91,16 +105,20 @@ def main():
     # plt.ylim([-5, 5])
     plt.show()
 
-    convergence, total_mistakes, th_n, t0_n = run_perceptron(X, y, niter, th, t0, 0, True)
-    
+    convergence, total_mistakes, th_n, t0_n, thetas = run_perceptron(X, y, niter, th, t0, 1, 0)
+    # print(thetas)
+
     print(f'After {niter} iterations:')
     print(f'Converged:{convergence}')
     print(f'Parameters:{th_n}')
     print(f'Offset:{t0_n}')
     print(f'Mistakes:{total_mistakes}')
+    print(thetas)
 
     x_n = np.arange(-10, 10, 1)
     y_n = (-th_n[0] / th_n[1]) * x_n - t0_n
+
+    # print(thetas)
 
     plt.scatter(X[:, 0][ y == -1 ], X[:, 1][ y == -1 ], color='red')
     plt.scatter(X[:, 0][ y == 1 ], X[:, 1][ y == 1 ], color='cyan')
