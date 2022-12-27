@@ -1,0 +1,66 @@
+November 7, 2022, Monday
+
+1) Linear Models and Gradient Descent
+    What is hypothesis?
+    The linear model
+    The Cost Function
+    How the gradient is calculated? It is calculated for every parameter
+
+2) Convergence Criteria:
+    Max iterations reached
+    difference in objective minimization (cost) is too small to compute more.
+
+3) Gradient Descent()
+    W = initial values (parameters) W = w0, w1, ..., wn-1
+    While iterations < max OR costdiff > epsilon:
+        W = W - learning_rate * (gradient)
+        Calculate cost again
+
+4) Stochastic Gradient Descent
+    we pick a random point and dot the calculation of the gradient descent only 
+
+5) Add regularizers to objective function to niminize over-fitting, and reduce the values of the coefficients (called as Ridge Regression)
+    lambda-regularizer parameter
+
+November 9, 2022, Wednesday
+
+1) Review Questions
+
+2) Linear Classification
+    The label is -1 or +1
+    Feature vector - actor, language, story theme, type(horror, action etx), audience type, ...
+    Hypothesis function will map the features to label -1 or +1
+    Hypothesis is a linear function, (line in two dimension or hyperplane in 'n' dimension)
+
+3) Training Error
+
+4) Linearly Separable Set of Points
+    Training samples are linearly separable if
+
+5) Perceptron Algorithm
+    Activation functions
+    Adjusts theta value
+
+    for iter in range(0, neterations):
+        for i inrange(0, N):
+            if y[i] * (theta * x[i]) <= 0:
+                theta = theta + y[i] * x[i]
+                # offset separately handled below
+                theat_0 = theta_0 + y[i]
+
+    Note: algorithm aboe is pseudo code for discussion only. Theta, x, y are vectors and should be handled properly
+    
+6) Problems with any linear separator
+    
+7) Support Vector Machines
+    Optimization Function with Hinge Loss and Regularizer
+    Find the Optimal Hyperplane that will separate the points
+    Leads to more generalization and better behavior for test/validation sets
+    Hinge LOSS    
+
+Some Questions
+1) Number of parameters for a 3 feature vectors and polynomial order is 2? Can you generalize?
+2) Maximum likelihood/MAP(Maximum Posterior) assuming the linear model with noise as gaussian will lead to the same equations as RMS error function plus regularizer
+3) Give the formula for the gradient using numpy
+4) Give the formula for the cost function using numpy
+5) Find the difference in perfomance doing the above two without using numpy
