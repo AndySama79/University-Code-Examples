@@ -93,3 +93,4 @@ plt.tight_layout()
 plt.savefig("Question4b.png")
 plt.show()
 # %%    Question 5
+
