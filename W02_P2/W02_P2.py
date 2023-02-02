@@ -51,6 +51,45 @@ show_heat = sns.heatmap(show_pivot).set_title("TV Show Heatmap")
 plt.show()
 
 # %%    Question 4
+y_movie = movies.groupby('year').size()
+m_movie = movies.groupby('month').size()
 
+y_show = shows.groupby('year').size()
+m_show = shows.groupby('month').size()
 
+year = data.groupby('year').size()
+month = data.groupby('month').size()
+
+year_x1 = year.index.tolist()
+month_x1 = month.index.tolist()
+
+year_x2 = y_show.index.tolist()
+month_x2 = m_show.index.tolist()
+
+year_x3 = y_movie.index.tolist()
+month_x3 = m_movie.index.tolist()
+
+#   Year-Wise distribution
+fig, ax = plt.subplots()
+ax.plot(year_x2, y_show)
+ax.plot(year_x3, y_movie)
+ax.plot(year_x1, year)
+ax.legend(["TV Shows", "Movies", "Total Shows"], loc="upper right")
+fig.suptitle("Year-wise distribution")
+plt.tight_layout()
+plt.savefig("Question4a.png")
+plt.show()
+
+#   Month-Wise distribution
+fig, ax = plt.subplots()
+ax.plot(month_x2, m_show)
+ax.plot(month_x3, m_movie)
+ax.plot(month_x1, month)
+ax.set_xticks(range(len(month_x1)))
+ax.set_xticklabels(month_x1, rotation=45)
+ax.legend(["TV Shows", "Movies", "Total Shows"], loc="upper right")
+fig.suptitle("Month-wise distribution")
+plt.tight_layout()
+plt.savefig("Question4b.png")
+plt.show()
 # %%    Question 5
