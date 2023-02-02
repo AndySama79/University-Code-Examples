@@ -14,8 +14,9 @@ labels = ["Movies", "TV Shows"]
 fig, ax = plt.subplots()
 ax.pie(sizes, labels=labels, autopct="%1.1f%%")
 fig.suptitle("Percentage: Movies v/s TV Shows")
+plt.savefig("Question1.png")
 plt.show()
-plt.savefig("Question1.jpeg")
+
 # %%    Question 2
 shows = data["country"].value_counts().head(5)
 regions = shows.index.tolist()
@@ -28,8 +29,8 @@ ax.bar(regions, shows)
 fig.suptitle("Top 5 regions having the highest number of shows")
 ax.set_xlabel("Regions -->")
 ax.set_ylabel("Total number of shows -->")
+plt.savefig("Question2.png")
 plt.show()
-plt.savefig("Question2.jpeg")
 
 # %%    Question 3
 
