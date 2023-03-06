@@ -11,8 +11,10 @@ def frozen_lake(steps):
         x += dx
         y += dy
 
+        print(type(x))
+
         #!   making sure that the particle stays within the bounds of the grid
-        x = max(min(x, 3) -3)
+        x = max(min(x, 3), -3)
         y = max(min(y, 3), -3)
 
         #!   checking for goal state
@@ -20,3 +22,5 @@ def frozen_lake(steps):
             return True
         
     return False
+
+print(frozen_lake(100))
