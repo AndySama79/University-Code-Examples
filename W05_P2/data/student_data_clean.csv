@@ -1,0 +1,31 @@
+,ID,Start time,Time in seconds,Time taken,Completion time,Gender,Age,Height,"Favorite sport to play
+","Favorite sport to watch
+","Your earlobes are
+","Your hair is naturally
+","How many hours of video games do you play each week (approximately on the average)?
+","How many hours of physical exercise do you do per week (approximately on the average)?
+","How many hours of extracurricular (non-sport) activities do you do per week (approximately on the average)?
+","How many times did you fall sick in the past one year?
+","What was your GPA in the last semester?
+","What was the highest educational qualification of your mother?
+","You are from a (see https://en.wikipedia.org/wiki/Classification_of_Indian_cities for city classification)
+","The length of you nose is (from bridge to tip)
+","The distance from the left corner of your left eye to right corner of your right eye is
+","The length of your head is
+","right hand
+","left hand
+","What musical instruments can you play?
+",Flute,Guitar,Keyboard,Drums,Mouth Organ,Piano,Table Tennis,Ukelele,Instruments
+0,1,2023-02-16 13:35:43,265,00:04:25,2023-02-16 13:40:08,1,20,174.0,Football,Football,1,Curly,0.0,7.0,8.0,1,8.65,Primary School,X tier city,10.16,15.0,20.0,15.0,15.0,Flute,1,0,0,0,0,0,0,0,"(1,0,0,0,0,0,0,0)"
+1,2,2023-02-16 13:51:46,888,00:14:48,2023-02-16 14:06:34,1,19,175.26,Cricket,Cricket,1,Straight,0.0,3.0,8.0,4,8.75,Bachelor,Y tier city,4.4,10.7,27.0,20.0,20.0,,0,0,0,0,0,0,0,0,"(0,0,0,0,0,0,0,0)"
+2,3,2023-02-16 14:14:19,167,00:02:47,2023-02-16 14:17:06,1,21,177.8,Swimming,,0,Wavy,0.0,5.0,7.0,3,7.0,Middle School,Z tier city,3.0,4.7,12.0,13.0,12.9,"Guitar, Keyboard",0,1,1,0,0,0,0,0,"(0,1,1,0,0,0,0,0)"
+3,4,2023-02-16 14:28:22,131,00:02:11,2023-02-16 14:30:33,1,23,185.0,Badminton ,Table Tennis,1,Straight,0.0,5.0,5.0,2,5.0,Bachelor,Y tier city,3.5,14.0,33.0,20.0,20.0,Flute,1,0,0,0,0,0,0,0,"(1,0,0,0,0,0,0,0)"
+4,5,2023-02-16 14:56:32,1049,00:17:29,2023-02-16 15:14:01,1,20,180.34,Football,"Cricket, Football",0,Curly,4.5,7.0,4.5,3,7.51,Masters,village,5.7,6.5,22.0,22.0,22.0,Drums,0,0,0,1,0,0,0,0,"(0,0,0,1,0,0,0,0)"
+5,6,2023-02-16 14:57:59,1048,00:17:28,2023-02-16 15:15:27,0,19,157.0,"Table Tennis, Badminton, Swimming, Football","Football, Cricket, Table Tennis, Surfing, Wrestling, WWE",0,Between wavy and straight,1.0,8.5,7.5,1,7.0,Masters,X tier city,4.5,6.0,21.0,20.0,19.7,"Guitar, Keyboard, Drums, Mouth Organ",0,1,1,1,1,0,0,0,"(0,1,1,1,1,0,0,0)"
+6,7,2023-02-16 15:57:23,84,00:01:24,2023-02-16 15:58:47,0,19,157.0,"Basketball, Badminton , Surfing ",Surfing ,0,Curly,0.0,8.0,4.0,7,8.7,Masters,X tier city,4.0,12.0,15.0,15.0,14.0,Guitar ,0,1,0,0,0,0,0,0,"(0,1,0,0,0,0,0,0)"
+7,8,2023-02-16 16:12:51,319,00:05:19,2023-02-16 16:18:10,1,21,185.42,Football ,Football ,1,Straight,0.0,7.0,14.0,2,9.55,Bachelor,Z tier city,3.5,13.0,15.0,17.5,19.5,Guitar,0,1,0,0,0,0,0,0,"(0,1,0,0,0,0,0,0)"
+8,9,2023-02-16 19:45:13,250,00:04:10,2023-02-16 19:49:23,1,20,184.0,Basketball,Wrestling,0,Wavy,1.0,3.0,2.0,0,7.4,Bachelor,Y tier city,5.0,14.0,19.0,22.0,22.0,,0,0,0,0,0,0,0,0,"(0,0,0,0,0,0,0,0)"
+9,10,2023-02-17 02:55:13,256,00:04:16,2023-02-17 02:59:29,1,19,180.34,Football,Football,1,Straight,0.0,9.0,4.5,5,8.23,Masters,X tier city,5.08,10.16,15.24,15.0,15.0,"Guitar , Piano",0,1,0,0,0,1,0,0,"(0,1,0,0,0,1,0,0)"
+10,11,2023-02-19 12:31:39,538,00:08:58,2023-02-19 12:40:37,1,19,160.0,Football,Cricket,0,Curly,1.0,10.0,3.0,0,8.3,Primary School,Y tier city,4.0,10.0,52.5,20.0,21.0,"Tabla, Flute, Ukelele",1,0,0,0,0,0,1,1,"(1,0,0,0,0,0,1,1)"
+11,12,2023-02-19 15:32:08,202,00:03:22,2023-02-19 15:35:30,1,20,185.0,Football,WWE,0,Straight,4.0,10.0,4.0,3,7.5,Bachelor,Z tier city,2.0,10.5,14.0,23.4,23.5,,0,0,0,0,0,0,0,0,"(0,0,0,0,0,0,0,0)"
+12,13,2023-02-19 17:00:34,143,00:02:23,2023-02-19 17:02:57,1,21,165.0,Table Tennis,Football,0,Wavy,5.0,10.0,6.0,4,8.7,Masters,X tier city,4.5,9.1,15.8,17.0,17.4,"Guitar, Keyboard, Drums",0,1,1,1,0,0,0,0,"(0,1,1,1,0,0,0,0)"
