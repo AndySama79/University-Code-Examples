@@ -32,7 +32,7 @@ print('Explained variance:', ret.explained_variance_)
 
 cum_exp_var = np.cumsum(ret.explained_variance_) / np.sum(ret.explained_variance_)
 fig, ax = plt.subplots()
-ax.plot(['pc1', 'pc2', 'pc3', 'pc4', 'pc5', 'pc6'] ,cum_exp_var)
+ax.plot(['pc1', 'pc2', 'pc3', 'pc4', 'pc5', 'pc6'], cum_exp_var)
 ax.set_xlabel('Principal Component')
 ax.set_ylabel('Explained Variance')
 fig.suptitle('Cumulative Explained Variance')
