@@ -1,0 +1,28 @@
+,ID,Tstart,Tend,Gender,Age,Height,Play,Watch,Earlobes,Hair,VideoGame,Physical,Extracurricular,Sick,GPA,EduMother,City,NoseLen,FaceWidth,HeadLen,RightHand,LeftHand,Instrument
+0,1,2023-02-16 13:35:43,2023-02-16 13:40:08,Man,20,174.0,Football,Football,Attached,Curly,0,7.0,8.0,1,8.65,Primary School (4th or 5th),X tier city,10.16,15cm,20cm,15cm,15cm,Flute
+1,2,2023-02-16 13:51:46,2023-02-16 14:06:34,Man,19,175.26,Cricket,Cricket,Attached,Straight,0,3.0,8.0,4,8.75,Bachelor,Y tier city,4.4,10.7 cm,27 cm,20 cm,20 cm,
+2,3,2023-02-16 14:14:19,2023-02-16 14:17:06,Man,21,177.8,Swimming,People fight,Detached,Wavy,0,5.0,7.0,3,7,Middle School (8th) ,Z tier city,3,4.7 cm,12 cm,13 cm,12.9 cm,Guitar
+3,4,2023-02-16 14:28:22,2023-02-16 14:30:33,Man,23,185.0,Badminton ,Table Tennis,Attached,Straight,0,5.0,5.0,2,5,Bachelor,Y tier city,3.5,14,33,20,20,Flute
+4,5,2023-02-16 14:56:32,2023-02-16 15:14:01,Man,20,180.34,football,Cricket,Detached,Curly,4.5,7.0,4.5,3,7.51,Masters,village,5.7,6.5 cm,22,22,22,drums
+5,6,2023-02-16 14:57:59,2023-02-16 15:15:27,Woman,19,157.0,Table Tennis,All,Detached,Wavy,1,8.5,7.5,1,7,Masters,X tier city,4.5,6 cm,21 cm ,20 cm,19.7 cm,Guitar
+6,7,2023-02-16 15:57:23,2023-02-16 15:58:47,Woman,19,157.0,Basketball,Surfing ,Detached,Curly,0,8.0,4.0,7,8.7,Masters,X tier city,4,12 cm ,15 cm ,15 cm,14 cm,Guitar 
+7,8,2023-02-16 16:12:51,2023-02-16 16:18:10,Man,21,185.42,Football ,Football ,Attached,Straight,0,7.0,14.0,2,9.55,Bachelor,Z tier city,3.5,13 cm,15 cm,17.5 cm,19.5 cm,Guitar
+8,9,2023-02-16 19:45:13,2023-02-16 19:49:23,Man,20,184.0,Basketball,Wrestling,Detached,Wavy,1,3.0,2.0,0,7.4,Bachelor,Y tier city,5,14,19,22,22,
+9,10,2023-02-17 02:55:13,2023-02-17 02:59:29,Man,19,180.34,Football,Football,Attached,Straight,0,9.0,4.5,5,8.23,Masters,X tier city,5.08,4 inch,6 inch,6 inch,6 inch,Guitar
+10,11,2023-02-19 12:31:39,2023-02-19 12:40:37,Man,19,160.0,Football,Cricket,Detached,Curly,1,10.0,3.0,0,8.3,Primary School (4th or 5th),Y tier city,4,10 cm,52.5 cm,20 cm,21 cm,Tabla
+11,12,2023-02-19 15:32:08,2023-02-19 15:35:30,Man,20,185.0,Football,WWE,Detached,Straight,4,10.0,4.0,3,7.5,Bachelor,Z tier city,2,10.5cm,14cm,23.4cm,23.5,
+12,13,2023-02-19 17:00:34,2023-02-19 17:02:57,Man,21,165.0,Table Tennis,Football,Detached,Wavy,5,10.0,6.0,4,8.7,Masters,X tier city,4.5,9.1 cm,15.8 cm,17 cm,17.4 cm,Guitar
+13,14,2023-02-22 14:55:16,2023-02-22 14:57:01,Man,20,179.0,Football,Football,Detached,Straight,2,3.0,14.0,2,8.32,Masters,Y tier city,5,11.5 cm,21.5 cm,20 cm,20 cm,Guitar
+14,15,2023-02-22 14:51:13,2023-02-22 14:57:05,Woman,19,157.48,Badminton ,Cricket ,Detached,Wavy, ,2.0,3.0,6,9.39,Masters,Z tier city,4,11 cm,20 cm,18cm,19 cm,
+15,16,2023-02-22 15:10:04,2023-02-22 15:13:57,Man,19,169.0,Badminton ,Cricket ,Detached,Wavy,4,5.0,6.0,2,9.03,Masters,X tier city,7,12 cm,16 cm,18 cm,17 cm,Piano
+16,17,2023-02-22 15:11:20,2023-02-22 15:17:52,Man,19,168.91,Badminton,Cricket,Detached,Straight,0,2.0,3.0,10,8.67,Bachelor,X tier city,5,9 cm,16 cm ,23 cm,22cm,
+17,18,2023-02-22 15:52:31,2023-02-22 16:02:56,Woman,20,162.0,Tennis ,Cricket ,Detached,Wavy,0,10.0,4.0,4,9.3,Masters,X tier city,1,11.5 cm,18 cm,14cm,13.5 cm,Keyboard 
+18,19,2023-02-22 16:56:29,2023-02-22 17:00:00,Non-binary,18,180.0,Table Tennis ,,Detached,Straight,0,12.0,20.0,35,will not tell,Bachelor,village,,don't know,don't know,don't know,don't know,
+19,20,2023-02-22 18:37:48,2023-02-22 18:39:45,Man,20,185.0,Cricket,Cricket,Detached,Straight,,7.0,3.0,7,7.45,High School (12th),Y tier city,4,10 cms,15 cms,6 cms,8 cms,
+20,21,2023-02-22 19:16:15,2023-02-22 19:18:44,Woman,19,165.1,Table Tennis,Cricket,Detached,Curly,0,1.0,3.0,multiple,8.32,Masters,X tier city,.,.,.,.,.,Tabla
+21,22,2023-02-22 22:26:39,2023-02-22 22:35:48,Man,20,177.8,Volleyball ,Cricket ,Attached,Curly,0,3.0,3.0,2,8.77,Masters,Z tier city,3,8cm ,14cm ,18cm ,18 cm ,
+22,23,2023-02-23 14:06:03,2023-02-23 14:11:40,Man,19,187.96,football,cricket,Detached,Wavy,1,1.0,20.0,1,9.3,Bachelor,X tier city,6,10 cm,20 cm,21 cm,23 cm,piano
+23,24,2023-02-23 18:24:28,2023-02-23 18:27:00,Man,19,172.0,Lawn tennis ,Pickle ball,Attached,Wavy,-,9.0,35.0,3,9.1,Bachelor,Y tier city,5,8 cm,13 cm,10 cm,11 cm,Keyboard
+24,25,2023-02-23 19:45:30,2023-02-23 19:50:32,Man,20,170.0,Badminton,Snooker,Detached,Wavy,0,25.0,14.0,5,8.6,Masters,Z tier city,3.175,1.5 inches,5 inches,3.5 inches,3.6 inches,Guitar
+25,26,2023-02-23 23:27:51,2023-02-23 23:32:14,Man,19,165.0,Cricket,Cricket,Detached,Curly,3,7.0,6.0,5,8.59,Bachelor,village,6,7.2cm,22 cm,17cm,17cm,
+26,27,2023-02-25 23:06:28,2023-02-25 23:08:27,Man,20,163.0,Volleyball,Cricket,Detached,Straight,0,7.0,3.5,6.5,7,Middle School (8th) ,village,4,8 cm,12 cm,7 cm,7.2 cm,
