@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Advertising <= 6.5\ngini = 0.483\nsamples = 280\nvalue = [166, 114]"] ;
+1 [label="Price <= 90.5\ngini = 0.37\nsamples = 143\nvalue = [108, 35]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="CompPrice <= 101.0\ngini = 0.36\nsamples = 17\nvalue = [4, 13]"] ;
+1 -> 2 ;
+3 [label="gini = 0.444\nsamples = 6\nvalue = [4, 2]"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 11\nvalue = [0, 11]"] ;
+2 -> 4 ;
+5 [label="CompPrice <= 126.5\ngini = 0.288\nsamples = 126\nvalue = [104, 22]"] ;
+1 -> 5 ;
+6 [label="gini = 0.065\nsamples = 59\nvalue = [57, 2]"] ;
+5 -> 6 ;
+7 [label="gini = 0.419\nsamples = 67\nvalue = [47, 20]"] ;
+5 -> 7 ;
+8 [label="Price <= 136.0\ngini = 0.488\nsamples = 137\nvalue = [58, 79]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="ShelveLoc <= 0.5\ngini = 0.443\nsamples = 118\nvalue = [39, 79]"] ;
+8 -> 9 ;
+10 [label="gini = 0.444\nsamples = 24\nvalue = [16, 8]"] ;
+9 -> 10 ;
+11 [label="gini = 0.37\nsamples = 94\nvalue = [23, 71]"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 19\nvalue = [19, 0]"] ;
+8 -> 12 ;
+}
